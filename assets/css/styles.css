@@ -1,6 +1,7 @@
 :root {
     --primary-color: #00FF41;
     --secondary-color: #0F111A;
+    --white-color: #FFFFFF;
     --gray-light: #E0E0E0;
     --light-grey: #B0B3B8;
     --gapping: 30px;
@@ -13,6 +14,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +22,11 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
     line-height: 1.5;
+}
+
+.white-bg {
+    background: var(--white-color);
+    color: var(--light-grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +60,10 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
 }
 
 .main-content {
@@ -158,4 +169,13 @@ a {
 .intro-img img, .intro-img svg {
     max-width: 100%;
     height: auto;
+}
+
+.top-bakugan {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }

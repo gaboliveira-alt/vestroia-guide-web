@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked=false"><a href="#home">LOGO</a></h1>
             <nav>
-                <ul>
-                    <li><a href="#intro">intro</a></li>
-                    <li><a href="#top-bakugans">tops</a></li>
-                    <li><a href="#">intro</a></li>
-                    <li><a href="#">intro</a></li>
+                <ul onclick="getElementById('close-menu').checked=false">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#top-bakugans">Top 3</a></li>
+                    <li><a href="#grid-one">My Grid</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
         <div/>
@@ -29,7 +31,7 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>Bakugan Brawlers</h2>
@@ -44,9 +46,9 @@
     <section id="top-bakugans" class="white-bg section">
         <div class="main-content top-bakugan">
             <h2>Top Bakugans</h2>
-            <p>Bakugan é uma franquia de aventura que mistura estratégia, colecionismo e batalhas épicas. A premissa foca em esferas metálicas e plásticas que, ao entrarem em contato com cartas magnéticas, se transformam em poderosas criaturas vindas de outra dimensão.</p>
-            <p>Bakugan é uma franquia de aventura que mistura estratégia, colecionismo e batalhas épicas. A premissa foca em esferas metálicas e plásticas que, ao entrarem em contato com cartas magnéticas, se transformam em poderosas criaturas vindas de outra dimensão.</p>
-            <p>Bakugan é uma franquia de aventura que mistura estratégia, colecionismo e batalhas épicas. A premissa foca em esferas metálicas e plásticas que, ao entrarem em contato com cartas magnéticas, se transformam em poderosas criaturas vindas de outra dimensão.</p>
+            <p>Hades é um Bakugan mecânico de três cabeças criado para replicar o poder do lendário Alpha Hydranoid. Com um design imponente e múltiplos pontos de articulação, ele utiliza sua força bruta e canhões laser ocultos para dominar o campo de batalha. Sua estratégia foca em ataques múltiplos e devastadores, representando o ápice da engenharia sombria da organização Vexos.</p>
+            <p>Altair destaca-se como o primeiro Bakugan mecânico a ser introduzido na série, possuindo uma forma que lembra um dragão cibernético ou uma ave de rapina. Diferente das criaturas biológicas, ele opera através de dados e circuitos, permitindo movimentos calculados e uma agilidade aérea superior. Sua transformação é marcada por sons metálicos e uma estética futurista que desafia os Bakugans tradicionais.</p>
+            <p>Enquanto os mecânicos buscam a perfeição técnica, Alpha Hydranoid representa o poder da evolução natural e sombria. Sendo a evolução final de Hydranoid, esta criatura possui três cabeças independentes e serras metálicas em seu corpo.</p>
         </div>
     </section>
 
@@ -57,16 +59,16 @@
 
             <div class="grid">
                 <article>
-                    <h3>Teste</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit adipisci animi rerum perferendis ad exercitationem! Eius, minima consequatur, unde cumque magni saepe molestiae distinctio sequi voluptatibus, totam asperiores blanditiis consectetur!</p>
+                    <h3>Dragonoid</h3>
+                    <p>Dragonoid é o líder nato dos Guerreiros da Batalha e o guardião do atributo Pyrus. Com a aparência de um dragão clássico e imponente, ele busca constantemente a evolução para proteger o equilíbrio de Vestroia. Sua estratégia é baseada em poder de fogo puro e uma determinação inabalável, tornando-se a criatura mais poderosa e respeitada do universo Bakugan.</p>
                 </article>
                 <article>
-                    <h3>Teste</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, laboriosam pariatur cupiditate reprehenderit, delectus voluptas maxime molestias maiores, unde ex similique incidunt consequuntur. Ut dolor facilis placeat assumenda in voluptas?</p>
+                    <h3>Preyas</h3>
+                    <p>Preyas é um Bakugan do atributo Aquos com uma personalidade irreverente e única. Sua maior vantagem estratégica é a habilidade de mudar sua própria estrutura molecular, permitindo que ele troque de atributo durante a batalha (como para Subterra ou Darkus). Essa versatilidade o torna um mestre da adaptação, confundindo os adversários que tentam explorar suas fraquezas.</p>
                 </article>
                 <article>
-                    <h3>Teste</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, accusamus, nulla enim pariatur sed iure illum ea soluta, obcaecati maxime unde. Voluptate quod officiis sint, temporibus iure omnis exercitationem consequuntur.</p>
+                    <h3>Hades</h3>
+                    <p>Hades é um Bakugan mecânico de três cabeças criado para replicar o poder do lendário Alpha Hydranoid. Com um design imponente e múltiplos pontos de articulação, ele utiliza sua força bruta e canhões laser ocultos para dominar o campo de batalha. Sua estratégia foca em ataques múltiplos e devastadores, representando o ápice da engenharia sombria da organização Vexos.</p>
                 </article>
             </div>
         </div>
@@ -79,13 +81,13 @@
 
             <div class="grid">
                 <div class="gallery-image">
-                    <img src="" alt="">
+                    <img src="assets/img/2000654-2861d.jpg" alt="Bakugan">
                 </div>
                 <div class="gallery-image">
-                    <img src="" alt="">
+                    <img src="assets/img/2000654-2861d.jpg" alt="Bakugan 1">
                 </div>
                 <div class="gallery-image">
-                    <img src="" alt="">
+                    <img src="assets/img/2000654-2861d.jpg" alt="Bakugan 2">
                 </div>
             </div>
         </div>
@@ -102,35 +104,35 @@
 
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Testing</th>
+                            <th>Testing</th>
+                            <th>Testing</th>
+                            <th>Testing</th>
+                            <th>Testing</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
+                            <td>Testing</td>
                         </tr>
                     </tbody>
 
@@ -149,12 +151,6 @@
 
     <section id="contact" class="intro main-bg section">
         <div class="main-content intro-content">
-            <div class="intro-text-content">
-                <h2>Bakugan Brawlers</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic aut ea eius nisi consectetur deleniti debitis ut, modi esse necessitatibus unde itaque nulla, temporibus eveniet. Possimus ipsam sapiente voluptas!</p>
-                <div class="intro-img">
-                    <img src="assets/img/bakugan_attributes___pyrus_by_elizabethbrettley_de2aklz-fullview.svg" alt="">
-                </div>
                 <div class="contact-form">
                     <fieldset class="form-grid">
                         <legend>Contact Me</legend>
@@ -191,5 +187,7 @@
     <footer id="footer" class="footer white-bg ">
         <p><a rel="nofollow" target="_blank" href="https://github.com/gaboliveira-alt">Feito por Gabriel Oliveira Pinto</a></p>
     </footer>
+
+    <a class="back-to-top" href="#home">➤</a>
 </body>
 </html>

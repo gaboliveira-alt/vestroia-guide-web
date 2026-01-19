@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -22,6 +23,11 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
     line-height: 1.5;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
 }
 
 .white-bg {
@@ -64,6 +70,35 @@ a {
 
 p {
     margin-bottom: 3rem;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-grey);
+}
+
+tfoot td, table th {
+    background: var(--light-grey);
 }
 
 .main-content {
@@ -178,4 +213,123 @@ p {
     justify-content: center;
     height: 100vh;
     text-align: center;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gapping);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gapping);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--light-grey);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--gray-light);
+    background: none;
+    color: var(--gray-light);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--light-grey);
+    color: var(--light-grey);
+}
+
+.form-group ::placeholder {
+    color: var(--light-grey);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
 }
